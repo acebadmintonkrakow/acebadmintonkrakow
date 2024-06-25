@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ace Sports Club</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+        #showcase {
+            background: url('badminton.jpg') no-repeat center center/cover;
+            color: #fff;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+        #showcase h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        #showcase p {
+            font-size: 1.2em;
+        }
+        #showcase img {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100px;
+            height: auto;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            width: calc(33.333% - 10px);
+            border-radius: 8px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        @media (max-width: 768px) {
+            #showcase h1 {
+                font-size: 2em;
+            }
+            #showcase p {
+                font-size: 1em;
+            }
+            .gallery img {
+                width: calc(50% - 10px);
+            }
+        }
+        @media (max-width: 480px) {
+            .gallery img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ace Sports Club</h1>
+    </header>
+
+    <section id="showcase">
+        <img src="/Users/aravind/Downloads/2.png" alt="Ace Sports Club Logo">
+        <div>
+            <h1>Welcome to Ace Sports Club</h1>
+            <p>Your home for badminton in Krakow, Poland</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <section id="tournaments" class="section">
+            <h2>Upcoming Tournaments</h2>
+            <p><strong>Date:</strong> July 15, 2024</p>
+            <p><strong>Rules:</strong></p>
+            <ul>
+                <li>Single elimination tournament</li>
+                <li>Best of three sets</li>
+                <li>Standard badminton rules apply</li>
+            </ul>
+        </section>
+
+        <section id="registration" class="section">
+            <h2>Register for a Tournament</h2>
+            <p>Please fill out the registration form using the link below:</p>
+            <a href="https://forms.gle/examplelink" target="_blank">Registration Form</a>
+        </section>
+
+        <section id="participants" class="section">
+            <h2>Registered Participants</h2>
+            <ul id="participantList">
+                <li>John Doe - Singles</li>
+                <li>Jane Smith & Partner - Doubles</li>
+            </ul>
+        </section>
+
+        <section id="gallery" class="section">
+            <h2>Previous Tournaments</h2>
+            <div class="gallery">
+                <img src="/Users/aravind/Downloads/IMG-20240428-WA0009.jpg" alt="Tournament 1">
+                <img src="/Users/aravind/Downloads/IMG-20240428-WA0025.jpg" alt="Tournament 2">
+                <img src="/Users/aravind/Downloads/IMG-20240428-WA0038.jpg" alt="Tournament 3">
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Ace Sports Club, Krakow, Poland &copy; 2024</p>
+    </footer>
+</body>
+</html>
+'''
+
+# Save the updated HTML content to a file
+file_path = '/mnt/data/ace_sports_club_final_v3.html'
+with open(file_path, 'w') as file:
+    file.write(html_content)
+
+file_path

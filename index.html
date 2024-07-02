@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ace Sports Club</title>
+    <title>Ace Badminton Krakow</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -50,8 +50,8 @@
         }
         #showcase {
             background: url('badminton.jpg') no-repeat center center/cover;
-            color: #fff11;
-            height: 300px;
+            color: #fff;
+            height: 200px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -82,12 +82,17 @@
         }
         .gallery {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
+            overflow-x: auto;
             gap: 10px;
         }
         .gallery img {
             width: calc(33.333% - 10px);
             border-radius: 8px;
+        }
+        .winners-list {
+            max-height: 300px;
+            overflow-y: auto;
         }
         footer {
             background: #333;
@@ -118,13 +123,13 @@
 </head>
 <body>
     <header>
-        <img src="2.png" alt="Ace Sports Club Logo">
-        <h1>Ace Sports Club</h1>
+        <img src="2.png" alt="Ace Badminton Krakow Logo">
+        <h1>Ace Badminton Krakow</h1>
     </header>
 
     <section id="showcase">
         <div>
-            <h1>Welcome to Ace Sports Club</h1>
+            <h1>Welcome to Ace Badminton Krakow</h1>
             <p>Your home for badminton in Krakow, Poland</p>
         </div>
     </section>
@@ -147,12 +152,58 @@
             <a href="https://forms.gle/examplelink" target="_blank">Registration Form</a>
         </section>
 
-        <section id="participants" class="section">
-            <h2>Registered Participants</h2>
-            <ul id="participantList">
-                <li>John Doe - Singles</li>
-                <li>Jane Smith & Partner - Doubles</li>
-            </ul>
+        <section id="winners" class="section">
+            <h2>Winners List</h2>
+            <div class="winners-list">
+                <h3>Kids</h3>
+                <ul>
+                    <li>1.⁠ ⁠Dashuri & Surya</li>
+                    <li>2.⁠ ⁠⁠Hrithesh & Saran</li>
+                    <li>3.⁠ ⁠⁠Tarun & Srikar</li>
+                </ul>
+                <h3>Women’s Singles</h3>
+                <ul>
+                    <li>1.⁠ ⁠Shika</li>
+                    <li>2.⁠ ⁠⁠Prathi</li>
+                    <li>3.⁠ ⁠⁠Dashuri</li>
+                </ul>
+                <h3>Women’s Doubles</h3>
+                <ul>
+                    <li>1.⁠ ⁠Shika & Prathi</li>
+                    <li>2.⁠ ⁠⁠Nidhi & Sahana</li>
+                    <li>3.⁠ ⁠⁠Aishwarya & Swenzy</li>
+                </ul>
+                <h3>Mixed Doubles</h3>
+                <ul>
+                    <li>1.⁠ ⁠Sasi & Nidhi</li>
+                    <li>2.⁠ ⁠⁠Mobeen & Vinay</li>
+                    <li>3.⁠ ⁠⁠Zafar & Shika</li>
+                </ul>
+                <h3>Men’s Singles (Open)</h3>
+                <ul>
+                    <li>1.⁠ ⁠Praveen Vargheese</li>
+                    <li>2.⁠ ⁠⁠Abhishek</li>
+                    <li>3.⁠ ⁠⁠Adityan</li>
+                </ul>
+                <h3>Men’s Doubles (Open)</h3>
+                <ul>
+                    <li>1.⁠ ⁠Praveen Vargheese & Abhishek</li>
+                    <li>2.⁠ ⁠Amit & Tolik</li>
+                    <li>3.⁠ ⁠⁠Adityan & Vipul</li>
+                </ul>
+                <h3>Men’s Doubles (Intermediate)</h3>
+                <ul>
+                    <li>1.⁠ ⁠Amit & Poovarasan</li>
+                    <li>2.⁠ ⁠⁠Swapnil & Arjun</li>
+                    <li>3.⁠ ⁠⁠Praveen Vargheese & Zafar</li>
+                </ul>
+                <h3>4Fun</h3>
+                <ul>
+                    <li>1.⁠ ⁠Pyarry & Ethan</li>
+                    <li>2.⁠ ⁠⁠Sachin & Tom</li>
+                    <li>3.⁠ ⁠⁠Aashal & Roopan</li>
+                </ul>
+            </div>
         </section>
 
         <section id="gallery" class="section">
@@ -169,7 +220,7 @@
     </div>
 
     <footer>
-        <p>Ace Sports Club, Krakow, Poland &copy; 2024</p>
+        <p>Ace Badminton Krakow, Krakow, Poland &copy; 2024</p>
     </footer>
 </body>
 </html>

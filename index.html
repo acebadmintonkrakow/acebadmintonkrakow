@@ -13,7 +13,8 @@
             color: #333;
         }
         header {
-            background: #333;
+            background: #333 url('2.png') no-repeat center center;
+            background-size: 150px; /* Adjust the size as needed */
             color: #fff;
             padding: 20px 0;
             text-align: center;
@@ -22,14 +23,8 @@
         header h1 {
             margin: 0;
             font-size: 2.5em;
-        }
-        header img {
-            position: absolute;
-            top: 50%;
-            left: 20px;
-            transform: translateY(-50%);
-            width: 100px;
-            height: auto;
+            position: relative;
+            z-index: 1;
         }
         nav {
             margin: 20px 0;
@@ -50,7 +45,7 @@
         }
         #showcase {
             background: url('badminton.jpg') no-repeat center center/cover;
-            color: #fff;
+            color: #fff11;
             height: 200px;
             display: flex;
             justify-content: center;
@@ -104,6 +99,9 @@
             bottom: 0;
         }
         @media (max-width: 768px) {
+            header {
+                background-size: 100px; /* Adjust the size for smaller screens */
+            }
             #showcase h1 {
                 font-size: 2em;
             }
@@ -123,7 +121,6 @@
 </head>
 <body>
     <header>
-        <img src="2.png" alt="Ace Badminton Krakow Logo">
         <h1>Ace Badminton Krakow</h1>
     </header>
 

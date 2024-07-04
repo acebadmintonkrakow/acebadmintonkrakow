@@ -104,18 +104,25 @@
             margin-bottom: 5px;
         }
         .social-links {
-            margin-top: 10px;
+            text-align: center;
+            margin-top: 10px; /* Adjust as needed */
         }
+        
+        .social-links p {
+            font-size: 14px; /* Adjust font size as needed */
+            display: inline-block; /* Ensures "Follow us on:" and icons are in a single line */
+            margin-right: 10px; /* Adjust spacing between text and icons */
+        }
+        
         .social-links a {
-            display: inline-block;
-            margin: 0 10px;
-            color: #fff;
-            font-size: 1.2em;
-            text-decoration: none;
-            transition: color 0.3s ease;
+            display: inline-block; /* Ensures icons are aligned horizontally */
+            margin-right: 10px; /* Adjust spacing between icons */
         }
-        .social-links a:hover {
-            color: #f39c12; /* Change color on hover */
+        
+        .social-links img {
+            width: 30px; /* Adjust size of icons as needed */
+            height: 30px;
+            border-radius: 50%; /* Makes the icons circular if they are square */
         }
         @media (max-width: 768px) {
             header {
@@ -261,8 +268,13 @@
     <footer>
         <p>Ace Badminton Krakow, Poland &copy; 2023</p>
         <div class="social-links">
-            <a href="https://www.instagram.com/aceclubkrakow?ig_sh=MWk0azNtaWVjaDB3cA==" target="_blank">Follow us on Instagram</a>
-            <a href="https://www.facebook.com/share/tDEkEky3okaXjGrC/" target="_blank">Follow us on Facebook</a>
+            <p>Follow us on:</p>
+            <a href="https://www.instagram.com/aceclubkrakow?ig_sh=MWk0azNtaWVjaDB3cA==" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/share/tDEkEky3okaXjGrC/" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook">
+            </a>
         </div>
     </footer>
 </body>
